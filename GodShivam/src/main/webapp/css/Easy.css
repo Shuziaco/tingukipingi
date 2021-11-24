@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+/*background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Numans', sans-serif;*/
+}
+.page-wrapper{
+    min-height: 100%;
+}
+/*#page-content {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;     Footer height 
+}*/
+html {
+/*position: relative;*/
+/*min-height: 100vh;*/
+}
+/*#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;             Footer height 
+  float: bottom;
+position: absolute;
+left: 0;
+bottom: 0;
+height: 100px;
+width: 100%;
+color:#FFFFFF; 
+background: #06303A;
+font-size:1.5em;
+text-align: center;
+line-height:100px;
+}*/
+.container{
+/* height: 100%; */
+align-content: center;
+position: absolute;
+/* height: 55%; */
+width: 30%;
+height: fit-content;
+top: 20%;
+left: 35%;
+background-color: white;  
+border: solid 3px #FFC312; 
+/* padding-left: 50px;
+padding-right: 50px;
+padding-bottom: 50px;
+padding-top: 20px; */
+padding: 20px;
+}
+
+.post-container {
+  /*padding: 16px;*/
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+.login_btn{
+/*color: black;
+background-color: #FFC312;*/
+border-radius: 5px;
+border: none;
+color: black; 
+background-color: #FFC312;
+width: 100px;
+}
+.login_btn:hover{
+color: white;
+/*background-color: white;*/
+}
+#btns{
+    border-radius: 5px;
+    color: white; 
+    background-color: #FFC312;
+}
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+/* Full-width input fields */
+.input{
+  /* width: 40%; */
+  /* padding: 12px 20px; */
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.lbl{
+    /* padding-right: 5px; */
+  width: 8%;
+}
+
+td{
+  width: 25%;
+}
+tr{
+  width: 100%;
+  /* padding: 5px; */
+}
+/* The Modal (background) */
+/*.modal {
+  display: none;   Hidden by default 
+  position: relative;  Stay in place 
+  z-index: 100;  Sit on top 
+  left: 0;
+  top: 0;
+  width: 100%;  Full width 
+  height: 100%;  Full height 
+  overflow: auto;  Enable scroll if needed 
+  background-color: rgb(0,0,0);  Fallback color 
+  background-color: rgba(0,0,0,0.4);  Black w/ opacity 
+  padding-top: 60px;
+}*/
+.post-modal {
+  display: none;  /* Hidden by default */
+  position: relative; /* Stay in place */
+  z-index: 100;  /*Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;  /*Full width*/ 
+  height: 100%;  /*Full height*/ 
+  /*overflow: auto;  Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/*  padding-top: 60px;
+  width: fit-content;*/
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;   /*5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%;  /* Could be more or less, depending on screen size */
+}
+.buttons-space{
+  width: 100%;
+  text-align: center;
+  margin-left: 10%;
+/*   position: absolute;
+  z-index: -1;*/
+  }
+  .buttons{
+  position: absolute;
+  top: 65%;
+  left: 43%;
+  }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+/* Set a style for all buttons */
+.webbtn {
+  background-color: #24a0ed;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+.webbtn:hover {
+  opacity: 0.8;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+         display: block;
+         float: none;
+  }
+  .cancelbtn {
+         width: 100%;
+  }
+}
